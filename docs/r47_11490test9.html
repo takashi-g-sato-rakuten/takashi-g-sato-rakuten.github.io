@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>r47_11490test9</title>
+
+  <style>
+.fixed-width-div {
+    width: 380px;
+    height: 300px;
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: left;
+}
+.T1 {
+    width: 320px;
+    hight: 250px;
+    table-layout: fixed;
+}
+</style>
+</head>
+<body>
+  <div class="fixed-width-div">
+        <div id="sato_test1">Carousel
+          <div id="rdn-adspot-2402-24153484"></div>
+          <div id="rdn-adspot-2403-24153484"></div>
+          <div id="rdn-adspot-2404-24153484"></div>
+        </div>
+  </div>
+  
+<script>
+  var rdntag = rdntag || {};
+  rdntag.cmd = rdntag.cmd || [];
+  rdntag.cmd.push(function () {
+    rdntag.defineAd(2402, 'rdn-adspot-2402-24153484').enableSingleRequest();
+    rdntag.defineAd(2403, 'rdn-adspot-2403-24153484').enableSingleRequest();
+    rdntag.defineAd(2404, 'rdn-adspot-2404-24153484').enableSingleRequest();
+
+    rdntag.displayInCarousel('sato_test1', {
+      margin: 5,
+      loop: false,
+      nextMinSlideRate: 0.1,
+      responsive: true,
+      navigation: {
+        color: 'aqua',
+        size: '48px',
+        type: 'text',
+        theme: "shadow",
+        hoverHighlight: false
+      }
+      pagination: {
+        color: '#00FF00',
+      },
+    });
+  });
+</script>
+<script src="https://stg-s-cdn.rmp.rakuten.co.jp/js/aa.js" async=""></script>
+</body>
